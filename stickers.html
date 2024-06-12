@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borde imagen</title>
+    <link rel="stylesheet" href="./assets/css/stickers.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>¿Cuántas PokéBalls quieres?</h1>
+            <p>Puedes llevar hasta 10 unidades.</p>
+        </div>
+        
+        <div class="pokeballsContainer">
+
+            <div class="pokeballContainer">
+                <img class="pokeballImg" src="https://pm1.aminoapps.com/6344/2353abdba22e86cd91ab4ca8e6c91ad9a3f7b3a1_hq.jpg" alt="">
+                <input id="pokeball" type="number" pattern="^[0-9]+">
+            </div>
+
+            <div class="pokeballContainer">
+                <img class="pokeballImg" src="https://pm1.aminoapps.com/6234/6d11cf014c689fa308eb03afabd19abde4f9174f_hq.jpg" alt="">
+                <input id="superball" type="number" pattern="^[0-9]+">
+            </div>
+
+            <div class="pokeballContainer">
+                <img class="pokeballImg" src="https://pm1.aminoapps.com/6234/e9cbd6f0b66e0360f18a517f6fe68694e24f1995_hq.jpg" alt="">
+                <input id="masterball" type="number" pattern="^[0-9]+">
+            </div>
+
+        </div>
+
+        <button onclick="comprar()">Comprar</button>
+
+        <h2 id="cantidadTotal"></h2>
+
+    </div>
+
+    <!--Script-->
+    <script src="./assets/js/stickers.js"></script>
+</body>
+</html>
